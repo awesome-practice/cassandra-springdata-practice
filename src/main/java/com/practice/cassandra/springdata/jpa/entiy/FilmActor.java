@@ -3,13 +3,11 @@ package com.practice.cassandra.springdata.jpa.entiy;
 import com.practice.cassandra.springdata.jpa.entiy.id.FilmActorId;
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.IdClass;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Table(name = "film_actor")
 @IdClass(FilmActorId.class)
 @Data
 public class FilmActor {
